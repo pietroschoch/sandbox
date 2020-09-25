@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Projects from './components/Projects/Projects';
+import Apps from './components/Apps-Assets/Apps';
+import Assets from './components/Apps-Assets/Assets';
+import GlobalStyle from './styles/global';
+import { MainTitle, Mini, SubTitle, Title } from './styles/types';
+import { Scroll } from './styles/scroll';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Sidebar />
+      <Scroll>
+        <Projects />
+        <Apps />
+        <Assets />
+      </Scroll>
+      <GlobalStyle />
+    </>
   );
-}
+};
 
 export default App;
