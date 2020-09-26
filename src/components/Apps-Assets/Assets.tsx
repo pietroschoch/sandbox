@@ -33,12 +33,14 @@ const Assets: React.FC = () => {
             <p>fonte circular, que inclusive é essa que você esta vendo.</p>
           </CardImage>
           <CardName>
-            <span>🔤</span>
+            <span role="img" aria-label="abc">
+              🔤
+            </span>
             <div>
               <Mini>ASSET</Mini>
               <SubTitle>brondby</SubTitle>
             </div>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?">
               baixar
               <FiArrowDown size={12} />
             </a>
@@ -46,20 +48,24 @@ const Assets: React.FC = () => {
         </Card>
         <InfoWrapper color="orange">
           <InfoCard>
-            <span>👀</span>
+            <span role="img" aria-label="eyes">
+              👀
+            </span>
             <div>
               <SubTitle>daqui a pouco tem mais</SubTitle>
               <p>mais ferramentas estão por vir, então fica de olho</p>
             </div>
           </InfoCard>
           <InfoCard>
-            <span>😝</span>
+            <span role="img" aria-label="face">
+              😝
+            </span>
             <div>
               <SubTitle>fala comigo!</SubTitle>
               <p>quer passar um feedback, sugestão ou só conversar?</p>
             </div>
           </InfoCard>
-          <a href="">
+          <a href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?">
             mandar feedback
             <FiArrowRight size={12} />
           </a>

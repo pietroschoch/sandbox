@@ -35,12 +35,14 @@ const Projects: React.FC = () => {
             </p>
           </CardImage>
           <CardName>
-            <span>🐢</span>
+            <span role="img" aria-label="turtle">
+              🐢
+            </span>
             <div>
               <Mini>TOOL</Mini>
               <SubTitle>tasks</SubTitle>
             </div>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?">
               usar agora
               <FiArrowRight size={12} />
             </a>
@@ -48,20 +50,24 @@ const Projects: React.FC = () => {
         </Card>
         <InfoWrapper color="green">
           <InfoCard>
-            <span>👀</span>
+            <span role="img" aria-label="eyes">
+              👀
+            </span>
             <div>
               <SubTitle>daqui a pouco tem mais</SubTitle>
               <p>mais ferramentas estão por vir, então fica de olho</p>
             </div>
           </InfoCard>
           <InfoCard>
-            <span>😝</span>
+            <span role="img" aria-label="face">
+              😝
+            </span>
             <div>
               <SubTitle>fala comigo!</SubTitle>
               <p>quer passar um feedback, sugestão ou só conversar?</p>
             </div>
           </InfoCard>
-          <a href="">
+          <a href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?">
             mandar feedback
             <FiArrowRight size={12} />
           </a>

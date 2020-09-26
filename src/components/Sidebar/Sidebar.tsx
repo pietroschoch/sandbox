@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigation, Box } from './styles';
-import { MainTitle, Mini, SubTitle, Title } from '../../styles/types';
+import { Mini, Title } from '../../styles/types';
 
 const Sidebar: React.FC = () => {
   return (
