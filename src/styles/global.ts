@@ -19,6 +19,10 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  span {
+      line-height: initial;
+  }
+
   body, input, button {
     font: 16px brondby, sans-serif;
   }
@@ -29,6 +33,10 @@ export default createGlobalStyle`
     height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 771px) {
+      flex-direction: column;
+    }
   }
 
   button {

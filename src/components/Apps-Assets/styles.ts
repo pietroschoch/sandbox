@@ -4,11 +4,21 @@ interface ColorProps {
   color: string;
 }
 
+interface DashProps {
+  dashed: boolean;
+}
+
 export const Box = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 120%;
+
+  @media only screen and (max-width: 771px) {
+    height: auto;
+    margin: 55px 0px;
+  }
 
   a {
     display: flex;
@@ -27,6 +37,12 @@ export const Box = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 771px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Card = styled.div`
@@ -35,8 +51,12 @@ export const Card = styled.div`
   background-color: #242526;
   border-radius: 6px;
   overflow: hidden;
-  width: 303px;
+  width: 330px;
   transition: transform 0.2s ease-in-out;
+
+  @media only screen and (max-width: 771px) {
+    margin-bottom: 17px;
+  }
 
   &:hover {
     transform: translateX(20px);
@@ -86,14 +106,21 @@ export const CardName = styled.div`
   }
 `;
 
-export const InfoCard = styled.div`
+export const InfoCard = styled.div<DashProps>`
   background: #242526;
   display: flex;
   padding: 28px;
-  width: 350px;
+  width: 330px;
   align-items: center;
   border-radius: 6px;
   margin-bottom: 17px;
+
+  ${props =>
+    props.dashed &&
+    css`
+      background: #18191a;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23333' stroke-width='5' stroke-dasharray='6%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    `}
 
   span {
     min-width: 40px;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navigation, Box } from './styles';
+import { FiGithub, FiArrowRight } from 'react-icons/fi';
+import { Navigation, Box, SocialButton } from './styles';
 import { Mini, Title } from '../../styles/types';
 
 const Sidebar: React.FC = () => {
@@ -7,7 +8,11 @@ const Sidebar: React.FC = () => {
     <Box>
       <div>
         <Title>sandbox</Title>
-        <p>Meu nome é pietro, bem vindo ao meu portifólio</p>
+        <p>
+          Meu nome é pietro, bem vindo ao sandbox, meu portifólio e futuramente
+          plataforma de design. Tudo aqui é experimental e está em constante
+          teste
+        </p>
       </div>
 
       <div>
@@ -32,6 +37,11 @@ const Sidebar: React.FC = () => {
           <Mini>PESSOAL</Mini>
         </Navigation>
       </div>
+      <SocialButton href="https://github.com/pietroschoch/">
+        <FiGithub />
+        github
+        <FiArrowRight />
+      </SocialButton>
     </Box>
   );
 };

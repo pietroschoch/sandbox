@@ -47,7 +47,7 @@ const Assets: React.FC = () => {
           </CardName>
         </Card>
         <InfoWrapper color="orange">
-          <InfoCard>
+          <InfoCard dashed>
             <span role="img" aria-label="eyes">
               👀
             </span>
@@ -56,7 +56,7 @@ const Assets: React.FC = () => {
               <p>mais ferramentas estão por vir, então fica de olho</p>
             </div>
           </InfoCard>
-          <InfoCard>
+          <InfoCard dashed={false}>
             <span role="img" aria-label="face">
               😝
             </span>

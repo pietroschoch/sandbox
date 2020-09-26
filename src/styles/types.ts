@@ -29,4 +29,9 @@ export const Mini = styled.p`
 export const Description = styled.p`
   width: 400px;
   margin-bottom: 30px;
+  margin-top: 10px;
+
+  @media only screen and (max-width: 771px) {
+    width: 100%;
+  }
 `;
