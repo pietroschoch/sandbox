@@ -24,6 +24,12 @@ export const Navigation = styled.div`
     width: 30px;
     margin-right: 10px;
   }
+
+  p {
+    width: auto !important;
+    line-height: 100% !important;
+    margin-top: 0px !important;
+  }
 `;
 
 export const Box = styled.div`

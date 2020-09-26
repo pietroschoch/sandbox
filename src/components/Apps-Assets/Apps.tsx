@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
               <Mini>TOOL</Mini>
               <SubTitle>tasks</SubTitle>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?">
+            <a href="https://tasks.sandbox.design/">
               usar agora
               <FiArrowRight size={12} />
             </a>

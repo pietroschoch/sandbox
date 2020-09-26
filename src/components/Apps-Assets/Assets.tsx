@@ -53,7 +53,7 @@ const Assets: React.FC = () => {
             </span>
             <div>
               <SubTitle>daqui a pouco tem mais</SubTitle>
-              <p>mais ferramentas estão por vir, então fica de olho</p>
+              <p>mais módulos estão por vir, então fica de olho</p>
             </div>
           </InfoCard>
           <InfoCard dashed={false}>

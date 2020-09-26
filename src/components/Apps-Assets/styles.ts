@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { shade } from 'polished';
 
 interface ColorProps {
   color: string;
@@ -9,8 +10,9 @@ interface DashProps {
 }
 
 export const Box = styled.div`
-  height: 100vh;
+  height: auto;
   display: flex;
+  margin: 150px 0px;
   flex-direction: column;
   justify-content: center;
   line-height: 120%;
@@ -89,6 +91,10 @@ export const CardName = styled.div`
   padding: 20px;
   align-items: center;
 
+  p {
+    margin-bottom: 5px;
+  }
+
   span {
     width: 45px;
     height: 45px;
@@ -103,6 +109,10 @@ export const CardName = styled.div`
 
   div {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -7px;
+    justify-content: center;
   }
 `;
 
@@ -153,14 +163,23 @@ export const InfoWrapper = styled.div<ColorProps>`
     align-items: center;
     margin-top: 14px;
     font-weight: 500;
+    transition: background-color 0.2s;
 
     ${props =>
       props.color === 'green'
         ? css`
             background-color: #144e33;
+
+            &:hover {
+              background-color: ${shade(0.2, '#144e33')};
+            }
           `
         : css`
             background-color: #6f4c2d;
+
+            &:hover {
+              background-color: ${shade(0.2, '#6f4c2d')};
+            }
           `}
   }
 `;

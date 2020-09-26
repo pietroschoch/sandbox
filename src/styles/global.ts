@@ -3,7 +3,14 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   @font-face {
      font-family: brondby;
-     src: url(./fonts/brondby.otf);
+     font-weight: 400;
+     src: url(./fonts/Brondby.otf);
+  }
+
+  @font-face {
+     font-family: brondby;
+     font-weight: 500;
+     src: url(./fonts/Brondby-Medium.otf);
   }
 
   * {
@@ -24,7 +31,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 16px brondby, sans-serif;
+    font: 17px brondby, sans-serif;
   }
 
   #root {
