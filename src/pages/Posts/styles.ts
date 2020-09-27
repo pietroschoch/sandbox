@@ -10,6 +10,10 @@ export const HeaderBox = styled.div`
   width: 700px;
   height: 125px;
   border-radius: 6px;
+
+  @media only screen and (max-width: 771px) {
+    display: none;
+  }
 `;
 
 export const Header = styled.div`
@@ -24,6 +28,11 @@ export const Header = styled.div`
     margin-top: 110px;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 771px) {
+      left: 0;
+      margin-top: 10px;
+    }
 
     &:hover {
       p {
@@ -73,6 +82,11 @@ export const Content = styled.div`
   position: relative;
   padding-top: 60px;
 
+  @media only screen and (max-width: 771px) {
+    width: 100%;
+    padding-top: 180px;
+  }
+
   img {
     width: 100%;
     margin: 10px 0px;
@@ -99,6 +113,14 @@ export const Content = styled.div`
 export const ButtonWrapper = styled.div`
   display: flex;
   margin: 10px 0px;
+
+  @media only screen and (max-width: 771px) {
+    flex-wrap: wrap;
+
+    a {
+      margin: 10px 0px;
+    }
+  }
 `;
 
 export const Button = styled.a<ColorProps>`
