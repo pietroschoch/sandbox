@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
             design gráfico e lagrimas (a letra s é muito difícil de desenhar)
           </p>
           <ButtonWrapper>
-            <Link to="/posts/ecommerce">Ver processo</Link>
+            <Link to="/posts/brondby">Ver processo</Link>
             <PlayButton href="https://tasks.sandbox.design/">
               <FiDownload />
               Baixar

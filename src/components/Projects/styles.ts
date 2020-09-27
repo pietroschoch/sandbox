@@ -79,6 +79,16 @@ export const ButtonWrapper = styled.div`
   display: flex;
   margin-top: 30px;
 
+  @media only screen and (max-width: 771px) {
+    flex-direction: column;
+
+    a {
+      & + a {
+        margin-top: 12px;
+      }
+    }
+  }
+
   a {
     text-decoration: none;
     background-color: #293345;

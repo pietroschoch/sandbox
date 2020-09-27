@@ -10,10 +10,6 @@ export const HeaderBox = styled.div`
   width: 700px;
   height: 125px;
   border-radius: 6px;
-
-  @media only screen and (max-width: 771px) {
-    display: none;
-  }
 `;
 
 export const Header = styled.div`
@@ -22,12 +18,19 @@ export const Header = styled.div`
   justify-content: center;
   position: relative;
 
+  @media only screen and (max-width: 771px) {
+    div {
+      background-color: #18191a;
+    }
+  }
+
   a {
     position: absolute;
     margin-right: 820px;
     margin-top: 110px;
     display: flex;
     align-items: center;
+    padding: 10px 0px;
 
     @media only screen and (max-width: 771px) {
       left: 0;
@@ -84,7 +87,6 @@ export const Content = styled.div`
 
   @media only screen and (max-width: 771px) {
     width: 100%;
-    padding-top: 180px;
   }
 
   img {

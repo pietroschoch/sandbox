@@ -42,7 +42,7 @@ export const Box = styled.div`
 
   @media only screen and (max-width: 771px) {
     width: 100%;
-    position: inherit;
+    position: initial;
   }
 
   p {

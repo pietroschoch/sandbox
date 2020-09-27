@@ -33,6 +33,7 @@ export default createGlobalStyle`
 
     @media only screen and (max-width: 771px) {
       flex-direction: column;
+      padding: 30px;
     }
   }
 

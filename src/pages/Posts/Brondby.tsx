@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiGithub, FiPlay } from 'react-icons/fi';
+import { FiArrowLeft, FiDownload } from 'react-icons/fi';
 
 import {
   HeaderBox,
@@ -32,70 +32,126 @@ const Brondby: React.FC = () => {
           </MainIcon>
           <MainTitle>Fonte Brondby</MainTitle>
           <p>
-            Esse app surgiu enquanto eu estava testando aplicativos de tarefa e
-            estudando reactjs. Comecei a usar um aplicativo que trackeava
-            hábitos, e me adaptei muito bem, até ter um obstáculo: na primeira
-            semana, o app limitava a criação de mais hábitos e de outras
-            funcionalidades, como estava precisando de projetos para estudar
-            react, escolhi fazer minha versão desse app e desenvolver um
-            produto.
+            Uma das minhas paixões como desginer são as tipos, como um bom
+            minimalista sempre gostei de composições tipograficas por si só,
+            depois de ter uma pincelada em tipografia na faculdade decidi
+            construir meu próprio tipo.
           </p>
-          <Title>MVP - Estrutura</Title>
+          <Title>O começo</Title>
           <p>
-            Como eu já tinha a base de outro app como referência, eu decidi
-            desenvolver um mvp trazendo só as funcionalidades mais importantes
-            para o app sair do papel, assim eu já conseguia entender em que
-            pontos eu poderia melhorar sem levar muito tempo de desenvolvimento.
+            Sempre gostei de tipos modernos e circulares, como a Gilroy. Ela
+            serviu de grande inspiração enquanto eu contruia minha própria
+            fonte. Então no começo eu sabia, queria uma fonte circular e que
+            fosse de bom uso na web (lugar onde mais trabalho)
           </p>
-          <p>As funcionalidades core para meu uso no app eram:</p>
+          <p>
+            Então fiz uma lista com as fontes que eu mais gostava, respeitando
+            que teria que ser circular e boa para web, escolhi:
+          </p>
           <ul>
-            <li>Poder criar tarefas</li>
-            <li>Poder excluir tarefas</li>
-            <li>
-              Poder criar hábitos (tarefas que se repetem por vários dias)
-            </li>
+            <li>Gilroy</li>
+            <li>Uber Move (Fonte da Uber)</li>
+            <li>Circular STD</li>
           </ul>
-          <Title>MVP - Prototipação</Title>
+          <img
+            src="https://befonts.com/wp-content/uploads/2016/07/gilroy-typefamily.png"
+            alt="gilroy"
+          />
+          <img
+            src="https://images.ctfassets.net/37l920h5or7f/4uQmSdzF1DYdNlwzPeulce/916b6f9184ac2f2f653ed3692d4e3832/secondary_lockup_1.png?fm=jpg&q=70&w=1600"
+            alt="uber-font"
+          />
+          <img
+            src="https://miro.medium.com/max/2800/1*fF-nJso7k2Gcpfc18kRXeA.png"
+            alt="circularStd"
+          />
+          <Title>Construção</Title>
           <p>
-            O processo de prototipação foi interessante porque ao mesmo tempo em
-            que desenhava, eu pensava no que aquilo significava para o
-            desenvolvimento, e o trabalho que levaria, essa troca esse código e
-            design acaba sendo muito produtiva.
+            O software de vetor que tenho mais facilidade é o illustrator,
+            escolhi ele para criar a brondby. Comecei pelo &quot;o&quot;
+            (minúscula do O), como estou fazendo uma fonte circular, é um bom
+            ponto de partida. Além disso, optei fazer todas as minúsculas
+            primeiro.
           </p>
-          <SubTitle>Primeira versão do protótipo.</SubTitle>
+          <img src="https://i.imgur.com/b2u47at.png" alt="letter-o" />
+          <p>Depois do o, fui para as letras derivadas do círculo principal</p>
+          <img src="https://i.imgur.com/duUMGwe.png" alt="letter-b-p-c" />
+          <img src="https://i.imgur.com/leynzRy.png" alt="letter-d-q" />
           <p>
-            Na minha primeira versão do app, busquei satisfazer os 3 pontos core
-            que pontuei acima, porém durante o desenho percebi que uma delas
-            poderia ser feita manualmente em um primeiro momento, a criação de
-            hábitos. Tirando ela consegui deixar o mvp ainda mais enxuto, pra já
-            desenvolver e começar a usar.
+            Depois disso parti para o &quot;i&quot; (minúscula do I), para poder
+            unir e começar mais variações de fontes, como o &quot;n&quot; e o
+            &quot;m&quot;.
+          </p>
+          <img src="https://i.imgur.com/bKoMu71.png" alt="letter-n-i-m" />
+          <SubTitle>Como eu fazia</SubTitle>
+          <p>
+            Eu sei a pentool junto com os shapes com stroke (desse jeito rolaria
+            fazer as variações, como bold, de maneira muito mais simples).
+          </p>
+          <Title>Tipos complicados</Title>
+          <p>
+            Eu já tinha feito uma fonte na faculdade, mas não tinha me dedicado
+            tanto quanto na brondby. Durante esse caminho, algumas tipos foram
+            bem difíceis de serem feitos, tanto pela dificuldade para encaixar o
+            estilo da fonte, quanto no próprio traçado.
           </p>
           <p>
-            Essa é a primeira versão, com a criação de hábitos incluída.
-            Conseguir adicionar a tarefa na primeira linha, e depois marcar como
-            feita, ou como uma parte dela feita.
+            Os que separei para mostrar são o &quot;s&quot;, &quot;a&quot; e
+            &quot;g&quot;:
           </p>
-          <img src="https://i.imgur.com/lUDnUvW.png" alt="beta-tasks" />
+          <img src="https://i.imgur.com/xe9kUz7.png" alt="letter-s-a-g" />
           <p>
-            Nas configurações da criação de tarefa, conseguiria setar por quanto
-            tempo essa tarefa duraria, e quantas vezes seria executada por dia,
-            caso o user não selecionasse nada, por default seria uma tarefa
-            simples.
+            O &quot;s&quot; tem uma peculiaridade muito grande, e qualquer
+            minima mudança impacta a fonte toda, da mesma forma o &quot;a&quot;,
+            que é um das letras mais usadas no nosso dia a dia. O &quot;g&quot;
+            tem uma peculiaridade, ele carrega muita personalidade, então acaba
+            determinando muito sobre a estética do tipo.
           </p>
-          <img src="https://i.imgur.com/D97DWuY.png" alt="beta-tasks" />
+          <Title>Variação de peso</Title>
           <p>
-            O tasks ainda está em desenvolvimento, você pode me dar um feedback
-            sobre ele? Você pode sugerir novas funcionalidades e agregar
-            qualquer coisa :) Críticas são sempre bem vindas
+            Antes de partir para as maiúsculas, decidi brincar com as variações
+            de peso, e inspirado pela Uber Move, escolhi fazer 4 pesos:
+          </p>
+          <ul>
+            <li>Light</li>
+            <li>Regular</li>
+            <li>Medium</li>
+            <li>Bold</li>
+          </ul>
+          <p>
+            Dessas, só a Regular e a Medium estão disponíveis, longe de sua
+            versão final
+          </p>
+          <SubTitle>Demo</SubTitle>
+          <p>Essas são todas as minúsculas da Regular e da Medium</p>
+          <img src="https://i.imgur.com/5RLEUa8.png" alt="minus" />
+          <Title>Maísculas</Title>
+          <p>
+            Nas maiúsculas, utilizei muitas vezes a versão minúscula aumentada
+            como ponto de partida, depois só adequava caso fosse necessária
+          </p>
+          <SubTitle>Dica</SubTitle>
+          <p>
+            As fontes maiúsculas são ligeiramente mais fáceis de serem feitas,
+            quando eu for fazer uma nova fonte, provavelmente vou começar por
+            elas.
+          </p>
+          <SubTitle>Demo</SubTitle>
+          <p>Essas são todas as maiúsculas da Regular e da Medium</p>
+          <img src="https://i.imgur.com/5RLEUa8.png" alt="plus" />
+          <Title>Me ajude!</Title>
+          <p>
+            Essa fonte ainda está em desenvolvimento, então eu preciso muito de
+            feedbacks para poder melhora-la e quem sabe um dia disponibilizar
+            ela no google fonts :)
           </p>
           <ButtonWrapper>
-            <Button color="blue" href="https://tasks.sandbox.design/">
-              <FiPlay />
-              Usar o Tasks
-            </Button>
-            <Button color="black" href="https://github.com/pietroschoch/tasks">
-              <FiGithub />
-              Ver projeto no github
+            <Button
+              color="blue"
+              href="https://drive.google.com/uc?export=download&id=1TaQcVJzge5Byjp0qzH-V6dVoD48mauL2"
+            >
+              <FiDownload />
+              Baixar fonte
             </Button>
             <Button
               color="green"
@@ -104,56 +160,57 @@ const Brondby: React.FC = () => {
               Mandar feedback
             </Button>
           </ButtonWrapper>
+          <Title>O pulo do gato</Title>
           <p>
-            Esse app está em constante evolução, um hábito antigo que eu tinha
-            era de não soltar para o mundo algo que eu não tivesse lapidado
-            muito e já estivesse gostando, mas depois de passar pelo Brondby
-            weekend woman (tenho um post contando como foi), acabei entendendo
-            bem o conceito de mvp e o ciclo de iteração, então decidi lançar,
-            mesmo que seja em uma versão muito simples. Se você usar o app, por
-            favor, me de um feedback (link para o whats)
+            Já tinha feito grande parte da fonte no illustrator e me deparei com
+            um problema: Como eu vou instalar esse negócio? Busquei e o processo
+            era um tanto quanto demorado, usando um programa chamado fontForge,
+            com mais algumas configurações (era realmente complexo).
           </p>
-          <Title>Desenvolvimento</Title>
-          <p>Com a base do protótipo passei para o desenvolvimento.</p>
-          <SubTitle>Database</SubTitle>
           <p>
-            Decidi armazenar os dados no localStorage (armazenamento do
-            navegador), por questão de rapidez e por não entender todo o app
-            ainda. Mas assim que forem surgindo mais funcionalidades vindas do
-            fluxo de iteração, pretendo usar o postgresSQL, node com typescript,
-            e o typeorm para escrever as migrations no banco.
+            Fuçando um pouquinho mais na web, achei um programa chamado
+            FontSelf, era um programa pago, mas parecia muito bom pra ser
+            verdade: É um plugin de Illustrator que transforma seu tipo feito lá
+            dentro, em uma fonte real, juntei umas moedinhas e comprei o
+            programa (vc só paga uma vez), agora consigo exportar a fonte com
+            uma facildade gigantte, além do programa ajudar com kerning e
+            espaçamentos da fonte, é magico.
           </p>
-          <SubTitle>Linguagem e Bibliotecas</SubTitle>
-          <ul>
-            <li>
-              Utilizei reactjs com typescript para escrever esse frontend.
-            </li>
-            <li>Styled components para lidar com o css e estilização.</li>
-            <li>date-fns para tratar com as datas.</li>
-          </ul>
-          <Title>Conclusão</Title>
-          <p>
-            Meu objetivo aqui não é mostrar algo 100% pronto, até porque
-            acredito que um produto nunca está 100% e sempre vai ter mais
-            necessidades para suprir, mas espero que tenha gostado até agora!
-            Entre em contato comigo para batermos um papo sobre esse app e
-            outras ideias :)
-          </p>
-          <p>Não esqueça de testar o tasks também :p</p>
           <ButtonWrapper>
-            <Button color="blue" href="https://tasks.sandbox.design/">
-              <FiPlay />
-              Usar o Tasks
+            <Button color="blue" href="https://www.fontself.com/">
+              FontSelf
             </Button>
-            <Button color="black" href="https://github.com/pietroschoch/tasks">
-              <FiGithub />
-              Ver projeto no github
+          </ButtonWrapper>
+          <Title>Brondby</Title>
+          <p>O que é Brondby?</p>
+          <p>
+            Bom, Brondby é uma cidade da dinamarca que tem uma arquitetura
+            circular, me pareceu o nome perfeito para descrever minha fonte
+            circular.
+          </p>
+          <img
+            src="https://lh3.googleusercontent.com/proxy/VEJlXBZbud4i2ma8mmnAQnLNL7MgRVWLOeBaiTW04bsvpGVX0va_OFHbNDY0aUl8HNGbb9qKqttP8msC6xPTkZUNUijw21VgmOmM_4hz1apjnLvfsk6l7S7bzvmxaFnyw295YVkL1VEXKNrXnMpiF5PD8r1uEfvR6928Ci2VPHUhXEvAQ_i50-yWhQjTUB3BpwsFpOZpAAtB5INCNYQ3eKGtTQ32bJ76llAovD-cl2G-8wU"
+            alt="brondby-city"
+          />
+          <Title>Conclusão e Download</Title>
+          <p>
+            Muito obrigado por ler até aqui! Vou deixar o link para download
+            abaixo, aproveite :)
+          </p>
+          <p>Não esqueça de me passar seu feedback sobre a fonte</p>
+          <ButtonWrapper>
+            <Button
+              color="blue"
+              href="https://drive.google.com/uc?export=download&id=1TaQcVJzge5Byjp0qzH-V6dVoD48mauL2"
+            >
+              <FiDownload />
+              Baixar fonte
             </Button>
             <Button
               color="green"
               href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?"
             >
-              Falar comigo
+              Mandar feedback
             </Button>
           </ButtonWrapper>
         </Content>
