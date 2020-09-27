@@ -2,20 +2,21 @@ import styled from 'styled-components';
 
 export const MainTitle = styled.h1`
   font-size: 36px;
-  font-weight: 500;
-  color: #e9e9e9;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
 `;
 
 export const Title = styled.h2`
-  font-size: 28px;
-  font-weight: 500;
-  color: #e9e9e9;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
 `;
 
 export const SubTitle = styled.h3`
-  font-size: 21px;
-  font-weight: 500;
-  color: #e9e9e9;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
 `;
 
 export const Mini = styled.p`

@@ -111,7 +111,6 @@ export const CardName = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: -7px;
     justify-content: center;
   }
 `;
@@ -162,7 +161,7 @@ export const InfoWrapper = styled.div<ColorProps>`
     color: #fff;
     align-items: center;
     margin-top: 14px;
-    font-weight: 500;
+    font-weight: 600;
     transition: background-color 0.2s;
 
     ${props =>

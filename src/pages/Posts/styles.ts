@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade } from 'polished';
+
+interface ColorProps {
+  color: string;
+}
 
 export const HeaderBox = styled.div`
   background-color: #1c2430;
@@ -61,11 +66,17 @@ export const MainIcon = styled.span`
 
 export const Content = styled.div`
   display: flex;
+  padding-bottom: 100px;
   flex-direction: column;
   align-items: flex-start;
   width: 600px;
   position: relative;
   padding-top: 60px;
+
+  img {
+    width: 100%;
+    margin: 10px 0px;
+  }
 
   h2 {
     margin-top: 20px;
@@ -78,5 +89,58 @@ export const Content = styled.div`
   p {
     line-height: 140%;
     margin: 10px 0px;
+  }
+
+  li {
+    margin: 10px 0px;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  margin: 10px 0px;
+`;
+
+export const Button = styled.a<ColorProps>`
+  padding: 14px 12px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  border-radius: 4px;
+
+  ${props =>
+    props.color === 'green' &&
+    css`
+      background-color: #144e33;
+
+      &:hover {
+        background-color: ${shade(0.2, '#144e33')};
+      }
+    `}
+
+  ${props =>
+    props.color === 'black' &&
+    css`
+      background-color: #242526;
+
+      &:hover {
+        background-color: ${shade(0.2, '#242526')};
+      }
+    `}
+
+    ${props =>
+    props.color === 'blue' &&
+    css`
+      background-color: #4285f4;
+
+      &:hover {
+        background-color: ${shade(0.2, '#4285F4')};
+      }
+    `}
+
+  svg {
+    margin-right: 10px;
   }
 `;

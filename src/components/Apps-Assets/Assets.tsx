@@ -22,7 +22,7 @@ const Assets: React.FC = () => {
     <Box>
       <MainTitle>modulos</MainTitle>
       <Description>
-        baiwe modulos de design ewclusivos criados por mim (futuramente assets
+        baixe modulos de design ewclusivos criados por mim (futuramente assets
         de outros designers). Todos os itens estão em fase de desenvolvimento e
         seu feedback é muito importante para a melhora!
       </Description>
@@ -40,7 +40,7 @@ const Assets: React.FC = () => {
               <Mini>ASSET</Mini>
               <SubTitle>brondby</SubTitle>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?">
+            <a href="https://drive.google.com/uc?export=download&id=1TaQcVJzge5Byjp0qzH-V6dVoD48mauL2">
               baixar
               <FiArrowDown size={12} />
             </a>

@@ -1,17 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @font-face {
-     font-family: brondby;
-     font-weight: 400;
-     src: url(./fonts/Brondby.otf);
-  }
-
-  @font-face {
-     font-family: brondby;
-     font-weight: 500;
-     src: url(./fonts/Brondby-Medium.otf);
-  }
 
   * {
     margin: 0;
@@ -31,7 +20,8 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 17px brondby, sans-serif;
+    font: 15px Mulish, sans-serif;
+    font-weight: 300;
   }
 
   #root {

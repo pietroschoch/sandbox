@@ -53,24 +53,25 @@ export const InfoCard = styled.div`
   }
 `;
 
-export const PlayButton = styled.button`
+export const PlayButton = styled.a`
   text-decoration: none;
-  background-color: #4285f4;
-  padding: 14px 12px;
-  font-weight: 500;
+  background-color: #4285f4 !important;
+  padding: 14px 12px !important;
+  font-weight: 600;
   border-radius: 4px;
-  color: #fff;
+  color: #fff !important;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
+  flex: 0 !important;
 
   &:hover {
-    background-color: ${shade(0.2, '#4285f4')};
+    background-color: ${shade(0.2, '#4285f4')} !important;
   }
 
   svg {
-    margin-left: 5px;
+    margin-right: 7px;
   }
 `;
 
@@ -82,7 +83,7 @@ export const ButtonWrapper = styled.div`
     text-decoration: none;
     background-color: #293345;
     padding: 14px 12px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 4px;
     cursor: pointer;
     flex: 1;
