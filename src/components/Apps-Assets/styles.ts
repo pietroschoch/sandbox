@@ -30,6 +30,10 @@ export const Box = styled.div`
     border-radius: 46px;
     align-items: center;
 
+    &:hover {
+      background-color: ${shade(0.1, '#e3e3e3')};
+    }
+
     svg {
       margin-left: 5px;
     }
@@ -54,15 +58,15 @@ export const Card = styled.div`
   border-radius: 6px;
   overflow: hidden;
   width: 330px;
-  transition: transform 0.2s ease-in-out;
+  /* transition: transform 0.2s ease-in-out; */
 
   @media only screen and (max-width: 771px) {
     margin-bottom: 17px;
   }
 
-  &:hover {
+  /* &:hover {
     transform: translateX(20px);
-  }
+  } */
 `;
 
 export const CardImage = styled.div<ColorProps>`
@@ -73,16 +77,22 @@ export const CardImage = styled.div<ColorProps>`
   p {
     width: 141px;
     line-height: 110%;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   ${props =>
     props.color === 'green'
       ? css`
           background-color: #0f9d58;
+          &:hover {
+            background-color: ${shade(0.1, '#0f9d58')};
+          }
         `
       : css`
           background-color: #f4b400;
+          &:hover {
+            background-color: ${shade(0.1, '#f4b400')};
+          }
         `}
 `;
 

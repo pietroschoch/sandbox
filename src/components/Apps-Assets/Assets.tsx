@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowDown, FiArrowRight } from 'react-icons/fi';
+import { FiDownload, FiArrowRight } from 'react-icons/fi';
 import {
   Box,
   Card,
@@ -22,7 +22,7 @@ const Assets: React.FC = () => {
     <Box>
       <MainTitle>modulos</MainTitle>
       <Description>
-        baixe modulos de design ewclusivos criados por mim (futuramente assets
+        baixe modulos de design exclusivos criados por mim (futuramente assets
         de outros designers). Todos os itens estão em fase de desenvolvimento e
         seu feedback é muito importante para a melhora!
       </Description>
@@ -42,7 +42,7 @@ const Assets: React.FC = () => {
             </div>
             <a href="https://drive.google.com/uc?export=download&id=1TaQcVJzge5Byjp0qzH-V6dVoD48mauL2">
               baixar
-              <FiArrowDown size={12} />
+              <FiDownload size={12} />
             </a>
           </CardName>
         </Card>
