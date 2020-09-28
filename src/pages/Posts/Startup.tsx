@@ -32,48 +32,52 @@ const Startup: React.FC = () => {
           </MainIcon>
           <MainTitle>Startup Weekend Woman</MainTitle>
           <p>
-            Esse app surgiu enquanto eu estava testando aplicativos de tarefa e
-            estudando reactjs. Comecei a usar um aplicativo que trackeava
-            hábitos, e me adaptei muito bem, até ter um obstáculo: na primeira
-            semana, o app limitava a criação de mais hábitos e de outras
-            funcionalidades, como estava precisando de projetos para estudar
-            react, escolhi fazer minha versão desse app e desenvolver um
-            produto.
+            O startup weekend é um evento de final de semana com um intuito:
+            criar uma startup em 3 dias.
           </p>
-          <Title>MVP - Estrutura</Title>
           <p>
-            Como eu já tinha a base de outro app como referência, eu decidi
-            desenvolver um mvp trazendo só as funcionalidades mais importantes
-            para o app sair do papel, assim eu já conseguia entender em que
-            pontos eu poderia melhorar sem levar muito tempo de desenvolvimento.
+            Já o SW Woman, é a edição do Startup Wekeend voltada para mulheres,
+            isso porque, prodominantemente, eventos de tecnologia tem uma
+            maioria masculina.
           </p>
-          <p>As funcionalidades core para meu uso no app eram:</p>
+          <p>
+            No SWW, 75% das pessoas que participam tem que ser mulheres. Eu fiz
+            parte dos 25%, meu time era composto por 6 pessoas, dessas, 5 das
+            mulheres mais brabas que conheço e eu.
+          </p>
+          <Title>Dream Team</Title>
           <ul>
-            <li>Poder criar tarefas</li>
-            <li>Poder excluir tarefas</li>
-            <li>
-              Poder criar hábitos (tarefas que se repetem por vários dias)
-            </li>
+            <li>Mayra - Muito boa com visual, super comunicativa</li>
+            <li>Helo - A pessoa mais simpática que vc pode conhecer</li>
+            <li>Greice - Inteligência de negócio apuradíssima</li>
+            <li>Francine - Expert em marketing digital</li>
+            <li>TROCAR - Treinadora de futebol feminino</li>
+            <li>Pietro - Designer das piadas ruins</li>
           </ul>
-          <Title>MVP - Prototipação</Title>
+          <Title>O começo</Title>
           <p>
-            O processo de prototipação foi interessante porque ao mesmo tempo em
-            que desenhava, eu pensava no que aquilo significava para o
-            desenvolvimento, e o trabalho que levaria, essa troca esse código e
-            design acaba sendo muito produtiva.
-          </p>
-          <SubTitle>Primeira versão do protótipo.</SubTitle>
-          <p>
-            Na minha primeira versão do app, busquei satisfazer os 3 pontos core
-            que pontuei acima, porém durante o desenho percebi que uma delas
-            poderia ser feita manualmente em um primeiro momento, a criação de
-            hábitos. Tirando ela consegui deixar o mvp ainda mais enxuto, pra já
-            desenvolver e começar a usar.
+            Sem dúvidas o que mais fez a gente quebrar a cabeça foi o modelo de
+            negócio. Tinhamos apenas uma certeza: queriamos fazer algo para
+            mudar a situação do futebol feminino no Brasil.
           </p>
           <p>
-            Essa é a primeira versão, com a criação de hábitos incluída.
-            Conseguir adicionar a tarefa na primeira linha, e depois marcar como
-            feita, ou como uma parte dela feita.
+            Nosso ponto central era a TROCAR, como ela trabalha com futebol
+            feminino, conseguiu passar uma visão muito fiel do que acontece
+            nesse ambiente, então tinhamos um bom ponto de partida.
+          </p>
+          <SubTitle>Metodologia</SubTitle>
+          <p>COLOCAR METODOLOGIA DE STARTUP</p>
+          <p>
+            Ligamos para várias meninas que jogavam bola, e perguntamos as
+            maiores dificuldades que elas tinham. E começamos a perceber a
+            vontade de ingressar na carreira de jogadora profissional.
+          </p>
+          <Title>Solução - Meninas de Ouro</Title>
+          <p>
+            Nossa solução buscava conectar meninas que tinham vontade de jogar,
+            com clubes, que tinham que buscar meninas para formar times (todo
+            clube da série A no masculino é obrigado a ter um time e uma base
+            feminina).
           </p>
           <img src="https://i.imgur.com/lUDnUvW.png" alt="beta-tasks" />
           <p>

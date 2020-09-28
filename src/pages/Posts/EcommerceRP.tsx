@@ -32,22 +32,21 @@ const EcommerceRP: React.FC = () => {
           </MainIcon>
           <MainTitle>Ecommerce RP</MainTitle>
           <p>
-            Esse app surgiu enquanto eu estava testando aplicativos de tarefa e
-            estudando reactjs. Comecei a usar um aplicativo que trackeava
-            hábitos, e me adaptei muito bem, até ter um obstáculo: na primeira
-            semana, o app limitava a criação de mais hábitos e de outras
-            funcionalidades, como estava precisando de projetos para estudar
-            react, escolhi fazer minha versão desse app e desenvolver um
-            produto.
+            Um amigo que trabalha comigo (na área de ecommerce) me indicou para
+            uma empresa que fabrica softwares para supermercado, eles queriam
+            criar um novo produto para seus clientes (os mercados): Um delivery.
           </p>
-          <Title>MVP - Estrutura</Title>
           <p>
-            Como eu já tinha a base de outro app como referência, eu decidi
-            desenvolver um mvp trazendo só as funcionalidades mais importantes
-            para o app sair do papel, assim eu já conseguia entender em que
-            pontos eu poderia melhorar sem levar muito tempo de desenvolvimento.
+            Você já pode imaginar o tamanho do trabalho, e sim, ele ainda não
+            terminou, mas decidi colocar aqui pela importância que tem na minha
+            carreira.
           </p>
-          <p>As funcionalidades core para meu uso no app eram:</p>
+          <Title>Metodologia</Title>
+          <p>
+            Eu sabia que para criar o protótipo desse app eu precisava seguir
+            uma métodologia, então, antes de inicar o projeto, apresentei a
+            seguinte estrutura para a RP: (empresa que me contratou)
+          </p>
           <ul>
             <li>Poder criar tarefas</li>
             <li>Poder excluir tarefas</li>

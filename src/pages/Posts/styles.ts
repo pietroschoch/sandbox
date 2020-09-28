@@ -19,6 +19,7 @@ export const Header = styled.div`
   position: relative;
 
   @media only screen and (max-width: 771px) {
+    min-height: 125px;
     div {
       background-color: #18191a;
     }
@@ -84,6 +85,7 @@ export const Content = styled.div`
   width: 600px;
   position: relative;
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @media only screen and (max-width: 771px) {
     width: 100%;
@@ -116,8 +118,11 @@ export const ButtonWrapper = styled.div`
   display: flex;
   margin: 10px 0px;
 
+  float: left;
+
   @media only screen and (max-width: 771px) {
-    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 201px;
 
     a {
       margin: 10px 0px;
@@ -127,6 +132,7 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled.a<ColorProps>`
   padding: 14px 12px;
+  min-height: 47px;
   display: flex;
   color: #fff;
   align-items: center;

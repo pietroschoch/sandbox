@@ -42,7 +42,9 @@ export const Box = styled.div`
 
   @media only screen and (max-width: 771px) {
     width: 100%;
-    position: initial;
+    position: initial !important;
+    height: 100% !important;
+    min-height: 260px;
   }
 
   p {
@@ -67,6 +69,7 @@ export const SocialButton = styled.a`
     margin-bottom: 30px;
     border-bottom: 1px solid #424344;
     padding-bottom: 30px;
+    padding-top: 20px;
   }
 
   &:hover {
