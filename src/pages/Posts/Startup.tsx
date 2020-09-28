@@ -1,16 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiGithub, FiPlay } from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 
-import {
-  HeaderBox,
-  Header,
-  Wrapper,
-  MainIcon,
-  Content,
-  ButtonWrapper,
-  Button,
-} from './styles';
+import { HeaderBox, Header, Wrapper, MainIcon, Content } from './styles';
 import { MainTitle, Title, SubTitle } from '../../styles/types';
 
 const Startup: React.FC = () => {
@@ -51,9 +43,10 @@ const Startup: React.FC = () => {
             <li>Helo - A pessoa mais simpática que vc pode conhecer</li>
             <li>Greice - Inteligência de negócio apuradíssima</li>
             <li>Francine - Expert em marketing digital</li>
-            <li>TROCAR - Treinadora de futebol feminino</li>
+            <li>Jô - Treinadora de futebol feminino</li>
             <li>Pietro - Designer das piadas ruins</li>
           </ul>
+          <img src="https://i.imgur.com/ZuwgapR.png" alt="dream-team" />
           <Title>O começo</Title>
           <p>
             Sem dúvidas o que mais fez a gente quebrar a cabeça foi o modelo de
@@ -61,105 +54,86 @@ const Startup: React.FC = () => {
             mudar a situação do futebol feminino no Brasil.
           </p>
           <p>
-            Nosso ponto central era a TROCAR, como ela trabalha com futebol
+            Nosso ponto central era a Jô, como ela trabalha com futebol
             feminino, conseguiu passar uma visão muito fiel do que acontece
             nesse ambiente, então tinhamos um bom ponto de partida.
           </p>
-          <SubTitle>Metodologia</SubTitle>
-          <p>COLOCAR METODOLOGIA DE STARTUP</p>
+          <Title>Metodologia</Title>
           <p>
-            Ligamos para várias meninas que jogavam bola, e perguntamos as
+            Utilizamos a metodologia de Lean startup, que consiste em 3 pilares:
+          </p>
+          <ul>
+            <li>Aprender</li>
+            <li>Construir</li>
+            <li>Medir</li>
+          </ul>
+          <p>
+            Esse ciclo se repete consecutivamente durante todo o Startup Weekend
+          </p>
+          <SubTitle>Aprendendo sobre o futebol feminino</SubTitle>
+          <p>
+            Ligamos para várias meninas que jogavam futebol, e perguntamos as
             maiores dificuldades que elas tinham. E começamos a perceber a
             vontade de ingressar na carreira de jogadora profissional.
           </p>
-          <Title>Solução - Meninas de Ouro</Title>
+          <SubTitle>Construindo uma solução</SubTitle>
           <p>
             Nossa solução buscava conectar meninas que tinham vontade de jogar,
             com clubes, que tinham que buscar meninas para formar times (todo
             clube da série A no masculino é obrigado a ter um time e uma base
             feminina).
           </p>
-          <img src="https://i.imgur.com/lUDnUvW.png" alt="beta-tasks" />
+          <SubTitle>Medindo a aderência</SubTitle>
           <p>
-            Nas configurações da criação de tarefa, conseguiria setar por quanto
-            tempo essa tarefa duraria, e quantas vezes seria executada por dia,
-            caso o user não selecionasse nada, por default seria uma tarefa
-            simples.
+            Mandamos muitas mensagens, ligamos para várias meninas, perguntando
+            qual seria o interesse delas em jogar profissionalmente.
           </p>
-          <img src="https://i.imgur.com/D97DWuY.png" alt="beta-tasks" />
           <p>
-            O tasks ainda está em desenvolvimento, você pode me dar um feedback
-            sobre ele? Você pode sugerir novas funcionalidades e agregar
-            qualquer coisa :) Críticas são sempre bem vindas
+            o resultado foi surpreendente: 64% das meninas já tinham pensado em
+            jogar de forma profissional.
           </p>
-          <ButtonWrapper>
-            <Button color="blue" href="https://tasks.sandbox.design/">
-              <FiPlay />
-              Usar o Tasks
-            </Button>
-            <Button color="black" href="https://github.com/pietroschoch/tasks">
-              <FiGithub />
-              Ver projeto no github
-            </Button>
-            <Button
-              color="green"
-              href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?"
-            >
-              Mandar feedback
-            </Button>
-          </ButtonWrapper>
           <p>
-            Esse app está em constante evolução, um hábito antigo que eu tinha
-            era de não soltar para o mundo algo que eu não tivesse lapidado
-            muito e já estivesse gostando, mas depois de passar pelo startup
-            weekend woman (tenho um post contando como foi), acabei entendendo
-            bem o conceito de mvp e o ciclo de iteração, então decidi lançar,
-            mesmo que seja em uma versão muito simples. Se você usar o app, por
-            favor, me de um feedback (link para o whats)
+            Ok, tinhamos meninas interessadas, mas qual a aderência dos clubes?
           </p>
-          <Title>Desenvolvimento</Title>
-          <p>Com a base do protótipo passei para o desenvolvimento.</p>
-          <SubTitle>Database</SubTitle>
           <p>
-            Decidi armazenar os dados no localStorage (armazenamento do
-            navegador), por questão de rapidez e por não entender todo o app
-            ainda. Mas assim que forem surgindo mais funcionalidades vindas do
-            fluxo de iteração, pretendo usar o postgresSQL, node com typescript,
-            e o typeorm para escrever as migrations no banco.
+            Acontece que ter um time de futebol feminino virou obrigação para os
+            clubes, e conversando com alguns contatos tínhamos a hipótese que os
+            clubes estariam interessados em uma base de atletas.
           </p>
-          <SubTitle>Linguagem e Bibliotecas</SubTitle>
-          <ul>
-            <li>
-              Utilizei reactjs com typescript para escrever esse frontend.
-            </li>
-            <li>Styled components para lidar com o css e estilização.</li>
-            <li>date-fns para tratar com as datas.</li>
-          </ul>
-          <Title>Conclusão</Title>
           <p>
-            Meu objetivo aqui não é mostrar algo 100% pronto, até porque
-            acredito que um produto nunca está 100% e sempre vai ter mais
-            necessidades para suprir, mas espero que tenha gostado até agora!
-            Entre em contato comigo para batermos um papo sobre esse app e
-            outras ideias :)
+            Nossa plataforma funcionaria como um linkedin para atletas,
+            conectando aos clubes.
           </p>
-          <p>Não esqueça de testar o tasks também :p</p>
-          <ButtonWrapper>
-            <Button color="blue" href="https://tasks.sandbox.design/">
-              <FiPlay />
-              Usar o Tasks
-            </Button>
-            <Button color="black" href="https://github.com/pietroschoch/tasks">
-              <FiGithub />
-              Ver projeto no github
-            </Button>
-            <Button
-              color="green"
-              href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?"
-            >
-              Falar comigo
-            </Button>
-          </ButtonWrapper>
+          <Title>Validando nossa solução</Title>
+          <p>
+            Fizemos uma landing page onde jogadoras e clubes podiam se cadastrar
+            e montamos o modelo de monetização.
+          </p>
+          <SubTitle>Monetização</SubTitle>
+          <img src="https://i.imgur.com/EIm7R3z.png" alt="landing-page" />
+          <SubTitle>Landing page</SubTitle>
+          <img src="https://i.imgur.com/ljlGSsC.png" alt="landing-page" />
+          <img src="https://i.imgur.com/HAhC8mg.png" alt="landing-page" />
+          <Title>Resultados</Title>
+          <p>
+            Tivemos 18 cadastros no plano gratuito e 2 cadastros no plano pago.
+          </p>
+          <p>
+            Isso tudo rolou em um final de semana. Depois de uma montanha russa
+            de emoções e decisões fomos apresentar nosso projeto para a banca do
+            evento.
+          </p>
+          <p>
+            O frio na barriga foi imenso, e depois de todas as apresentações
+            saiu o resultado: Nós, as Meninas de Ouro ficamos com o primeiro
+            lugar.
+          </p>
+          <p>
+            Se eu posso dar uma dica para você, essa dica é: participe de
+            hackathons, o ambiênte é propício para desenvolvimento pessoal e
+            aprendizado extremo, sou muito grato a quem organizou e ao meu time.
+          </p>
+          <p>Muito obrigado por me acompanhar até aqui :)</p>
         </Content>
       </Wrapper>
     </>
