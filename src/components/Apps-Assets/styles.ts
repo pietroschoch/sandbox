@@ -115,6 +115,8 @@ export const CardName = styled.div`
     justify-content: center;
     font-size: 21px;
     margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
   }
 
   div {

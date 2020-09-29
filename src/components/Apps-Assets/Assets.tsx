@@ -30,7 +30,7 @@ const Assets: React.FC = () => {
         <Card>
           <CardImage color="orange">
             <Title>font | brondby</Title>
-            <p>fonte circular, que inclusive é essa que você esta vendo.</p>
+            <p>fonte circular, com muita personalidade e de graça!</p>
           </CardImage>
           <CardName>
             <span role="img" aria-label="abc">

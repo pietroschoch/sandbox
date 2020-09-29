@@ -9,7 +9,7 @@ const Sidebar: React.FC = () => {
       <div>
         <Title>sandbox</Title>
         <p>
-          Meu nome é pietro, bem vindo ao sandbox, meu portifólio e futuramente
+          Meu nome é Pietro, bem vindo ao sandbox, meu portifólio e futuramente
           plataforma de design. Tudo aqui é experimental e está em constante
           teste
         </p>

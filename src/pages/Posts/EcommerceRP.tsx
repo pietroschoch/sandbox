@@ -1,16 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiGithub, FiPlay } from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 
-import {
-  HeaderBox,
-  Header,
-  Wrapper,
-  MainIcon,
-  Content,
-  ButtonWrapper,
-  Button,
-} from './styles';
+import { HeaderBox, Header, Wrapper, MainIcon, Content } from './styles';
 import { MainTitle, Title, SubTitle } from '../../styles/types';
 
 const EcommerceRP: React.FC = () => {
@@ -37,7 +29,7 @@ const EcommerceRP: React.FC = () => {
             criar um novo produto para seus clientes (os mercados): Um delivery.
           </p>
           <p>
-            Você já pode imaginar o tamanho do trabalho, e sim, ele ainda não
+            Você já pode imaginar o tamanho do trabalho, e sim, ainda não
             terminou, mas decidi colocar aqui pela importância que tem na minha
             carreira.
           </p>
@@ -48,113 +40,97 @@ const EcommerceRP: React.FC = () => {
             seguinte estrutura para a RP: (empresa que me contratou)
           </p>
           <ul>
-            <li>Poder criar tarefas</li>
-            <li>Poder excluir tarefas</li>
-            <li>
-              Poder criar hábitos (tarefas que se repetem por vários dias)
-            </li>
+            <li>Entender o público</li>
+            <li>Idealizar</li>
+            <li>Prototipar</li>
+            <li>Testar</li>
+            <li>Medir</li>
           </ul>
-          <Title>MVP - Prototipação</Title>
           <p>
-            O processo de prototipação foi interessante porque ao mesmo tempo em
-            que desenhava, eu pensava no que aquilo significava para o
-            desenvolvimento, e o trabalho que levaria, essa troca esse código e
-            design acaba sendo muito produtiva.
+            Acordamos então que faríamos reuniões semanais pra discutir o
+            andamento do projeto.
           </p>
-          <SubTitle>Primeira versão do protótipo.</SubTitle>
+          <Title>Entendendo o público</Title>
           <p>
-            Na minha primeira versão do app, busquei satisfazer os 3 pontos core
-            que pontuei acima, porém durante o desenho percebi que uma delas
-            poderia ser feita manualmente em um primeiro momento, a criação de
-            hábitos. Tirando ela consegui deixar o mvp ainda mais enxuto, pra já
-            desenvolver e começar a usar.
+            A RP tem uma lista de clientes (mercados), e esse produto (o
+            ecommerce que eu prototiparia) será vendido para eles, então eu
+            precisava entender quem eram os compradores desses mercados.
           </p>
           <p>
-            Essa é a primeira versão, com a criação de hábitos incluída.
-            Conseguir adicionar a tarefa na primeira linha, e depois marcar como
-            feita, ou como uma parte dela feita.
+            Com essa lista, procurei no google para entender cada mercado, e
+            como se comportava em cada localidade, e em sua imensa maioria, eram
+            mercados de bairro.
           </p>
-          <img src="https://i.imgur.com/lUDnUvW.png" alt="beta-tasks" />
+          <SubTitle>Pesquisas</SubTitle>
           <p>
-            Nas configurações da criação de tarefa, conseguiria setar por quanto
-            tempo essa tarefa duraria, e quantas vezes seria executada por dia,
-            caso o user não selecionasse nada, por default seria uma tarefa
-            simples.
+            Existem poucas pesquisas de público sobre mercados, e são muito
+            difíceis de achar, eu separei duas que encontrei pra mostrar aqui:
           </p>
-          <img src="https://i.imgur.com/D97DWuY.png" alt="beta-tasks" />
-          <p>
-            O tasks ainda está em desenvolvimento, você pode me dar um feedback
-            sobre ele? Você pode sugerir novas funcionalidades e agregar
-            qualquer coisa :) Críticas são sempre bem vindas
-          </p>
-          <ButtonWrapper>
-            <Button color="blue" href="https://tasks.sandbox.design/">
-              <FiPlay />
-              Usar o Tasks
-            </Button>
-            <Button color="black" href="https://github.com/pietroschoch/tasks">
-              <FiGithub />
-              Ver projeto no github
-            </Button>
-            <Button
-              color="green"
-              href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?"
-            >
-              Mandar feedback
-            </Button>
-          </ButtonWrapper>
-          <p>
-            Esse app está em constante evolução, um hábito antigo que eu tinha
-            era de não soltar para o mundo algo que eu não tivesse lapidado
-            muito e já estivesse gostando, mas depois de passar pelo EcommerceRP
-            weekend woman (tenho um post contando como foi), acabei entendendo
-            bem o conceito de mvp e o ciclo de iteração, então decidi lançar,
-            mesmo que seja em uma versão muito simples. Se você usar o app, por
-            favor, me de um feedback (link para o whats)
-          </p>
-          <Title>Desenvolvimento</Title>
-          <p>Com a base do protótipo passei para o desenvolvimento.</p>
-          <SubTitle>Database</SubTitle>
-          <p>
-            Decidi armazenar os dados no localStorage (armazenamento do
-            navegador), por questão de rapidez e por não entender todo o app
-            ainda. Mas assim que forem surgindo mais funcionalidades vindas do
-            fluxo de iteração, pretendo usar o postgresSQL, node com typescript,
-            e o typeorm para escrever as migrations no banco.
-          </p>
-          <SubTitle>Linguagem e Bibliotecas</SubTitle>
           <ul>
-            <li>
-              Utilizei reactjs com typescript para escrever esse frontend.
-            </li>
-            <li>Styled components para lidar com o css e estilização.</li>
-            <li>date-fns para tratar com as datas.</li>
+            <li>Área de atuação do mercado FGV</li>
+            <li>Pesquisa Tendência do Consumidor APAS/IBOPE</li>
           </ul>
-          <Title>Conclusão</Title>
+          <SubTitle>Área de atuação do mercado (FGV)</SubTitle>
           <p>
-            Meu objetivo aqui não é mostrar algo 100% pronto, até porque
-            acredito que um produto nunca está 100% e sempre vai ter mais
-            necessidades para suprir, mas espero que tenha gostado até agora!
-            Entre em contato comigo para batermos um papo sobre esse app e
-            outras ideias :)
+            Na primeira, conseguimos entender um pouco sobre a área de atuação
+            de um mercado, e como mercados maiores ou menores impactam de forma
+            distinta sua região.
           </p>
-          <p>Não esqueça de testar o tasks também :p</p>
-          <ButtonWrapper>
-            <Button color="blue" href="https://tasks.sandbox.design/">
-              <FiPlay />
-              Usar o Tasks
-            </Button>
-            <Button color="black" href="https://github.com/pietroschoch/tasks">
-              <FiGithub />
-              Ver projeto no github
-            </Button>
-            <Button
-              color="green"
-              href="https://api.whatsapp.com/send?phone=5541933002285&text=Eai%20mano,%20de%20boa?"
-            >
-              Falar comigo
-            </Button>
-          </ButtonWrapper>
+          <img src="https://i.imgur.com/6claIze.png" alt="mercados-pequenos" />
+          <p>
+            Aqui, em um mercado relativamente pequeno ( 550 m² ), podemos ver
+            que a grande massa de consumidores (pontinhos pretos está muito
+            perto do centro, e que temos alguns mercados na região (pontos em
+            amarelo), que disputam a atenção dos consumidores da área.
+          </p>
+          <img src="https://i.imgur.com/V7gWpXO.png" alt="mercados-grandes" />
+          <p>
+            Já nessa segunda imagem, temos um mercado maior ( 2.470 m² ), nesse
+            panorama não temos uma massa tão bem definida quanto no primeiro
+            mercado. Além disso, temos muito menos mercados na região (que é
+            ainda maior).
+          </p>
+          <p>
+            Com isso em mente, na reunião discutimos algumas ideias, como a de
+            poder retirar produtos na loja, depois de fazer a compra pelo app, e
+            o de frete grátis para regiões próximas (levando em conta que os
+            mercados são pequenos, a grande massa de clientes mora perto).
+          </p>
+          <SubTitle>Tendências do consumidor</SubTitle>
+          <p>Na segunda pesquisa, destaquei alguns slides para mostrar aqui</p>
+          <p>Mercado de bairro é requisitado para compras de emergência</p>
+          <img src="https://i.imgur.com/jWWhsTI.png" alt="emergencia" />
+          <p>
+            Com isso em pauta, pensamos em reforçar ainda mais a questão de
+            retirada na loja e uma entrega super rápida, com do James ou do
+            iFood.
+          </p>
+          <p>
+            Outra ideia interessante foi a de sugerir produtos baseado na hora e
+            na temperatura, tentando prever o comportamento do consumidor (com o
+            tempo isso seria alimentado por análise de dados reais).
+          </p>
+          <p>
+            Outra pauta interessante e peculiar dos mercados é a folheteria
+            (encartes), nessa pesquisa conseguimos ver que ainda é amplamente
+            usada.
+          </p>
+          <img src="https://i.imgur.com/V7AcpeV.png" alt="folheteria" />
+          <p>
+            Então, na versão inicial do app vamos contruir um espaço para os
+            clientes acessarem a mesma folheteria que teriam fisicamente,
+            disperdiçando menos papal e tendo sempre a mais atualizada.
+          </p>
+          <p>
+            Com isso, também pretendemos atrair mais clientes que não usariam a
+            funcionalidade do ecommerce normalmente, mas que poderiam começar a
+            usar depois de ter certa prática com os encartes.
+          </p>
+          <SubTitle>Esse projeto ainda está em andamento...</SubTitle>
+          <p>
+            Conforme formos avançando vou atualizando esse post. Muito obrigado
+            por ler até aqui.
+          </p>
         </Content>
       </Wrapper>
     </>

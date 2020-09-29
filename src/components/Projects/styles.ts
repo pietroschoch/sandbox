@@ -31,6 +31,8 @@ export const ProjectCard = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    vertical-align: middle;
     margin-bottom: 15px;
   }
 

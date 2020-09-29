@@ -68,6 +68,8 @@ export const BadgeWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    vertical-align: middle;
     font-size: 36px;
     opacity: 1;
     position: relative;
